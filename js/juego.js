@@ -31,7 +31,6 @@ var Juego = {
     new Obstaculo('imagenes/valla_horizontal.png', 850, 200, 30, 30, 1),
     new Obstaculo('imagenes/valla_vertical.png', 400, 390, 30, 30, 1),
     new Obstaculo('imagenes/valla_vertical.png', 400, 420, 30, 30, 1),
-    new Obstaculo('imagenes/bache.png', 850, 460, 30, 30, 1),
     new Obstaculo('imagenes/bache.png', 550, 380, 30, 30, 1),
     new Obstaculo('imagenes/bache.png', 400, 240, 30, 30, 1),
     new Obstaculo('imagenes/bache.png', 280, 80, 30, 30, 1),
@@ -216,7 +215,6 @@ Juego.moverEnemigos = function() {
       enemigo.mover();
     });
 
-
 };
 
 /* Recorre los enemigos para ver cual esta colisionando con el jugador
@@ -236,8 +234,6 @@ Juego.calcularAtaques = function() {
     }
   }, this);
 };
-
-
 
 /* Aca se chequea si el jugador se peude mover a la posicion destino.
  Es decir, que no haya obstaculos que se interpongan. De ser asi, no podra moverse */
