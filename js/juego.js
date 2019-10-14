@@ -145,18 +145,26 @@ Juego.capturarMovimiento = function(tecla) {
   if (tecla == 'izq') {
     movX = -velocidad;
     this.jugador.sprite = "imagenes/auto_rojo_izquierda.png";
+    this.jugador.ancho = 30;
+    this.jugador.alto = 15;
   }
   if (tecla == 'arriba') {
     movY = -velocidad;
     this.jugador.sprite = "imagenes/auto_rojo_arriba.png";
+    this.jugador.ancho = 15;
+    this.jugador.alto = 30;
   }
   if (tecla == 'der') {
     movX = velocidad;
     this.jugador.sprite = "imagenes/auto_rojo_derecha.png";
+    this.jugador.ancho = 30;
+    this.jugador.alto = 15;
   }
   if (tecla == 'abajo') {
     movY = velocidad;
     this.jugador.sprite = "imagenes/auto_rojo_abajo.png";
+    this.jugador.ancho = 15;
+    this.jugador.alto = 30;
   }
 
   // Si se puede mover hacia esa posicion hay que hacer efectivo este movimiento
